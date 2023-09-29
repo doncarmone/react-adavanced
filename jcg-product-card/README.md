@@ -1,15 +1,18 @@
-import { ProductButtons, ProductCard, ProductImage, ProductTitle } from '../components';
-import { products } from '../data/products';
+# JCG-PRODUCT-CARD
 
-const product = products[0];
+Testing package to test deployment on NPM
 
-export const ShoppingPage = () => {
-    return (
-        <div>
-            <h1>ShoppingPage</h1>
-            <hr />
-            <div>
-                <ProductCard
+### @donCarmone
+
+
+## Ejemplo
+
+```
+import { ProductCart, ProductImage, ProductTitle, ProductButtons} from 'jcg-product-card'
+```
+
+```
+<ProductCard
                     product={product}
                     inititalValues={{
                         count: 4,
@@ -26,7 +29,4 @@ export const ShoppingPage = () => {
                         )
                     }
                 </ProductCard>
-            </div>
-        </div>
-    )
-}
+```
