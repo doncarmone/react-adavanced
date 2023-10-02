@@ -58,16 +58,6 @@ export const Navigation = () => {
                 Formki-Abstraction
               </NavLink>
             </li>
-            <li>
-              <NavLink to='/about' activeClassName='nav-active' exact>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/users' activeClassName='nav-active' exact>
-                Users
-              </NavLink>
-            </li>
           </ul>
         </nav>
 
@@ -88,12 +78,6 @@ export const Navigation = () => {
           </Route>
           <Route path='/formik-abstractation'>
             <FormikAbstractationPage />
-          </Route>
-          <Route path='/users'>
-            <h1>Users</h1>
-          </Route>
-          <Route path='/'>
-            <h1>Home</h1>
           </Route>
         </Switch>
       </div>
