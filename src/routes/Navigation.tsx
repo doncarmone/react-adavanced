@@ -13,6 +13,8 @@ import {
   FormikCompoentsPage,
   FormikAbstractationPage,
 } from '../03-forms';
+import { RegisterFormikPage } from '../03-forms/pages/RegisterFormikPage';
+import { DynamicForm } from '../03-forms/pages/DynamicForm';
 
 export const Navigation = () => {
   return (
@@ -23,12 +25,12 @@ export const Navigation = () => {
           <ul>
             <li>
               <NavLink to='/register' activeClassName='nav-active' exact>
-                RegisterPage
+                Register Page Example
               </NavLink>
             </li>
             <li>
               <NavLink to='/formik-basic' activeClassName='nav-active' exact>
-                Formki-Basic
+                Formik Basic Example
               </NavLink>
             </li>
             <li>
@@ -37,7 +39,7 @@ export const Navigation = () => {
                 activeClassName='nav-active'
                 exact
               >
-                Formki-yup-Basic
+                Formik Yup Basic Example
               </NavLink>
             </li>
             <li>
@@ -46,7 +48,7 @@ export const Navigation = () => {
                 activeClassName='nav-active'
                 exact
               >
-                Formki-Components
+                Formik Components Example
               </NavLink>
             </li>
             <li>
@@ -55,7 +57,25 @@ export const Navigation = () => {
                 activeClassName='nav-active'
                 exact
               >
-                Formki-Abstraction
+                Formik Abstraction Example
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/register-formik'
+                activeClassName='nav-active'
+                exact
+              >
+                Register Formik Example
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to='/dynamic-form'
+                activeClassName='nav-active'
+                exact
+              >
+                Dynamic Form
               </NavLink>
             </li>
           </ul>
@@ -64,8 +84,8 @@ export const Navigation = () => {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path='/register'>
-            <RegisterPage />
+          <Route path='/register-formik'>
+            <RegisterFormikPage />
           </Route>
           <Route path='/formik-basic'>
             <FormikBasicPage />
@@ -78,6 +98,12 @@ export const Navigation = () => {
           </Route>
           <Route path='/formik-abstractation'>
             <FormikAbstractationPage />
+          </Route>
+          <Route path='/register'>
+            <RegisterPage />
+          </Route>
+          <Route path='/dynamic-form'>
+            <DynamicForm />
           </Route>
         </Switch>
       </div>
